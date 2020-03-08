@@ -3,13 +3,16 @@ package com.iphayao.linebot;
 import java.io.IOException;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-import com.google.common.io.Files;
-
 import io.swagger.models.Path;
 
+@SpringBootApplication(scanBasePackages = { "com.iphayao.linebot"
+		,"com.iphayao.repository"
+		,"com.iphayao.service"
+		,"com.iphayao.linenotify"})
 public class Application extends SpringBootServletInitializer {
 	public static Path downloadedContentDir;
     public static void main(String[] args) throws IOException {
