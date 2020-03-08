@@ -5,25 +5,25 @@ import java.io.OutputStream;
 import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Stack;
-import java.util.UUID;
-import java.util.concurrent.ExecutionException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ExecutionException;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.google.common.io.ByteStreams;
+import com.iphayao.LineApplication;
 import com.iphayao.linebot.flex.CatalogueFlexMessageSupplier;
 import com.iphayao.linebot.flex.NewsFlexMessageSupplier;
 import com.iphayao.linebot.flex.ReceiptFlexMessageSupplier;
@@ -31,13 +31,10 @@ import com.iphayao.linebot.flex.RestaurantFlexMessageSupplier;
 import com.iphayao.linebot.flex.RestaurantMenuFlexMessageSupplier;
 import com.iphayao.linebot.flex.TicketFlexMessageSupplier;
 import com.iphayao.linebot.helper.RichMenuHelper;
-import com.iphayao.linebot.model.Employee;
-import com.iphayao.linebot.model.Entity;
-import com.iphayao.linebot.model.Food;
-import com.iphayao.linebot.model.Holiday;
 import com.iphayao.linebot.model.UserLog;
 import com.iphayao.linebot.model.UserLog.status;
 import com.iphayao.repository.LineRepository;
+import com.iphayao.repository.LogRepo;
 import com.iphayao.service.FoodsService;
 import com.iphayao.service.HolidayService;
 import com.linecorp.bot.client.LineMessagingClient;
@@ -60,24 +57,12 @@ import com.linecorp.bot.model.message.TemplateMessage;
 import com.linecorp.bot.model.message.TextMessage;
 import com.linecorp.bot.model.message.template.CarouselColumn;
 import com.linecorp.bot.model.message.template.CarouselTemplate;
-import com.linecorp.bot.model.message.template.ConfirmTemplate;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
 import lombok.NonNull;
 import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
-
-import com.iphayao.LineApplication;
 
 @Slf4j
 @ComponentScan
@@ -90,6 +75,9 @@ public class LineBotController {
 
 	@Autowired
 	private LineRepository lineRepo;
+	
+	@Autowired
+	private LogRepo logRepo;
 	
 	@Autowired
 	private HolidayService holiday;
@@ -161,6 +149,7 @@ public class LineBotController {
 			switch (text) {
 //			case "ขอดูรายการอาหารทั้งหมดค่ะ": {
 			case "เปิดเครื่องไม่ได้": {
+				logRepo.saveLog("เปิดเครื่องไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ไม่ได้เสียบปลั๊ก"+ "\n" + "2. สายไฟไม่แน่น\n" + 
 								"3. ไม่ได้เปิดสวิตไฟ")));
