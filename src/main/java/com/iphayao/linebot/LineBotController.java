@@ -181,7 +181,7 @@ public class LineBotController {
 		break;
 			}
 			case "ไฟล์งานหาย": {
-//				this.reply(replyToken,
+				this.reply(replyToken,
 				Arrays.asList(new TextMessage("1. หาให้ถังขยะ ไปที่ถังขยะและพิมชื่อไฟล์ที่หายไป")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
