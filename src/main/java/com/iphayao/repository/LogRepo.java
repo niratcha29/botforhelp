@@ -50,7 +50,7 @@ public class LogRepo {
 			MapSqlParameterSource parameters = new MapSqlParameterSource();
 			jdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 			stb = new StringBuilder();
-			stb.append( "INSERT INTO public.log_support(log_desc, log_date, user_line_id)VALUES(:logcase, now(), :userid)");
+			stb.append( "INSERT INTO log_support(log_desc, log_date, user_line_id)VALUES(:logcase, now(), :userid)");
 			parameters.addValue("logcase", logcase);
 			parameters.addValue("userid", userid);
 			jdbcTemplate.update(stb.toString(), parameters);

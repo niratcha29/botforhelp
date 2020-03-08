@@ -157,6 +157,7 @@ public class LineBotController {
 				break;
 			}
 			case "เสียงไม่ดัง": {
+				logRepo.saveLog("เสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ให้ผู้ใช้เช็ครูปลำโพงที่หน้าจอ"+ "\n" + "2. ตั้งค่าใน Sound\n")));
 				userLog.setStatusBot(status.DEFAULT);
@@ -164,12 +165,14 @@ public class LineBotController {
 			}
 //			case "ขอท"{
 			case "เครื่องดับเอง": {
+				logRepo.saveLog("เครื่องดับเอง",userLog.getUserID());
 				this.reply(replyToken,
 				Arrays.asList(new TextMessage("1. ปลั๊กไฟหลวม")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
 			case "ไฟล์งานหาย": {
+				logRepo.saveLog("ไฟล์งานหาย",userLog.getUserID());
 				this.reply(replyToken,
 				Arrays.asList(new TextMessage("1. หาให้ถังขยะ ไปที่ถังขยะและพิมชื่อไฟล์ที่หายไป")));
 		userLog.setStatusBot(status.DEFAULT);
