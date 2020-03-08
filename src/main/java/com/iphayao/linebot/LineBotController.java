@@ -155,10 +155,7 @@ public class LineBotController {
 		}
 		String text = content.getText();
 		ModelMapper modelMapper = new ModelMapper();
-		// userLog.setEmpCode(text.toString());
-		userLog.setFoodName(text.toString());
-		String empName = lineRepo.findEmp(text.toString());
-		String foodName = lineRepo.findFoods(text.toString());
+
 
 		if (userLog.getStatusBot().equals(status.DEFAULT)) {
 			switch (text) {
@@ -329,56 +326,7 @@ public class LineBotController {
 			}
 		} else if (userLog.getStatusBot().equals(status.VOTE_FOODS)) {
 			lineRepo.CountVote(userLog);
-			if (foodName == null) {
-				switch (text) {
-				case "ขอดูรายการอาหารทั้งหมดค่ะ": {
-					String foodsList = foods.ListAllFoods();
-					this.reply(replyToken, Arrays.asList(new TextMessage(foodsList)));
-					userLog.setStatusBot(status.VOTE_FOODS);
-					break;
-				}
-				}
-				this.reply(replyToken,
-						Arrays.asList(new TextMessage("ไม่พบรายาร อาหารดังกล่าว กรุณา ใส่รหัสอาหารอีกครั้งค่ะ")));
-				userLog.setStatusBot(status.VOTE_FOODS);
-
-			} else if (text != null && text == userLog.getFoodName()) {
-				if (userLog.getCountVout_CheckPossilibity() >= 10) {
-					this.reply(replyToken, Arrays.asList(new TextMessage(
-							"คุณโหวตอาหารครบ 10 รายการสำหรับอาทิตย์นี่เเล้วค่ะ   กรุณารออาทิตย์ถัดไปสำหรับการโหวตครั้งใหม่นะคะ")));
-					userLog.setStatusBot(status.DEFAULT);
-				} else {
-					userLog.setFoodId(text.toString());
-					lineRepo.saveFood(userLog);
-					Calendar c = Calendar.getInstance();
-					Date now = new Date();
-					SimpleDateFormat simpleDateformat = new SimpleDateFormat("MM");
-					LocalDate today = LocalDate.now();
-					// Go backward to get Monday
-					LocalDate monday = today;
-					while (monday.getDayOfWeek() != DayOfWeek.MONDAY) {
-						monday = monday.minusDays(1);
-					}
-					// Go forward to get Sunday
-					LocalDate sunday = today;
-					while (sunday.getDayOfWeek() != DayOfWeek.SUNDAY) {
-						sunday = sunday.plusDays(1);
-					}
-					int limitVOte = 9;
-					int stopVote = limitVOte - userLog.getCountVout_CheckPossilibity();
-					this.reply(replyToken,
-							Arrays.asList(new TextMessage("คุณโหวต  " + "\n" + "( " + foodName + "  )" + "\n"+"ประจำสัปดาห์ที่ "
-									+ DateTimeFormatter.ofPattern("dd", Locale.CHINA).format(monday) + "-"
-									+ DateTimeFormatter.ofPattern("dd", Locale.CHINA).format(sunday) + "/"
-									+ simpleDateformat.format(now) + "/" + c.get(Calendar.YEAR) + "\n"
-									+ "เหลือสิทธ์ในการโหวตอีก" + stopVote + "ครั้ง")));
-					userLog.setStatusBot(status.VOTE_FOODS);
-				}
-
-			} else {
-				this.reply(replyToken, Arrays.asList(new TextMessage("นอน โว้ยยยย")));
-				userLog.setStatusBot(status.VOTE_FOODS);
-			}
+			
 		} else if (userLog.getStatusBot().equals(status.SAVE)) {
 			switch (text) {
 			case "cancel": {
@@ -449,21 +397,7 @@ public class LineBotController {
 			}
 		} else if (userLog.getStatusBot().equals(status.FINDEMP)) {
 			userLog.setEmpCode(text.toString());
-			if (empName != null) {
-
-				ConfirmTemplate confirmTemplate = new ConfirmTemplate("ยืนยัน, คุณใช่ " + empName + " หรือไม่ ?",
-						new MessageAction("ใช่ !", "ใช่"), new MessageAction("ไม่ใช่ !", "ไม่ใช่"));
-
-				TemplateMessage templateMessage = new TemplateMessage("Confirm alt text", confirmTemplate);
-				this.reply(replyToken, templateMessage);
-				userLog.setStatusBot(status.FINDCONFIRM);
-			} else {
-				this.reply(replyToken, Arrays.asList(new TextMessage(
-						"ไม่มีข้อมูลพนักงานเบื้องต้นในระบบ โปรดกรอกรหัสพนักงานให้ถูกต้อง หรือ ติดต่อผู้ดูแลระบบ  \n @line : http://line.naver.jp/ti/p/-AK9r2Na5E#~ "),
-						new TextMessage("กรุณากรอก รหัสพนักงาน ให้ถูกต้อง" + "\n" + "เพื่อยืนยันตัวตนอีกครั้งค่ะ")));
-				;
-				userLog.setStatusBot(status.FINDEMP);
-			}
+		
 		} else if (userLog.getStatusBot().equals(status.FINDCONFIRM)) {
 			switch (text) {
 			case "ใช่": {
