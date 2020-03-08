@@ -160,9 +160,10 @@ public class LineBotController {
 		if (userLog.getStatusBot().equals(status.DEFAULT)) {
 			switch (text) {
 //			case "ขอดูรายการอาหารทั้งหมดค่ะ": {
-			case "ขอดูรายการ": {
-				String foodsList = foods.ListAllFoods();
-				this.reply(replyToken, Arrays.asList(new TextMessage(foodsList)));
+			case "เปิดเครื่องไม่ได้": {
+				this.reply(replyToken,
+						Arrays.asList(new TextMessage("1. ไม่ได้เสียบปลั๊ก"+ "\n" + "2. สายไฟไม่แน่น\n" + 
+								"3. ไม่ได้เปิดสวิตไฟ")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
