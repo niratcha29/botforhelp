@@ -1,0 +1,17 @@
+
+line.bot:
+  channel-token: 'Put Your Channel Token Here.'
+  channel-secret: 'Put Your Channel Token Here.'
+  handler.path: /callback
+  
+spring.datasource:
+  platform: postgres
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://ec2-52-77-234-86.ap-southeast-1.compute.amazonaws.com:27348/ssline?sslmode=disable
+  username: ssline
+  password: ssline^1999
+  
+  server:
+  port: 8080
+  servlet:
+   contextPath: /api

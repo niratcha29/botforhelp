@@ -1,0 +1,40 @@
+size:
+  width: 2500
+  height: 1686
+selected: false
+name: Home
+chatBarText: 'เมนู'
+areas:
+-
+  bounds:
+    x: 0
+    y: 0
+    width: 1250
+    height: 1450
+  action:
+    type: message
+    label: profile
+    text: 'ขอลาหยุดครับผม'
+-
+  bounds:
+    x: 1251
+    y: 0
+    width: 1249
+    height: 1450
+  action:
+    type: message
+    label: echo
+    text: 'ขอทราบ ข้อมูลวันหยุดค่ะ'
+    
+-
+  bounds:
+    x: 0
+    y: 1451
+    width: 2500
+    height: 434
+  action:
+    type: message
+    label: Madman
+    text: 'โหวตอาหารประจำสัปดาห์'
+    
+    
