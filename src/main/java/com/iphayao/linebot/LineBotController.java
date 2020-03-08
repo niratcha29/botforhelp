@@ -167,28 +167,24 @@ public class LineBotController {
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-			case "ลงทะเบียน": {
+			case "เสียงไม่ดัง": {
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("กรุณากรอก รหัสพนักงาน"+ "\n" + "เพื่อยืนยันตัวตนค่ะ")));
-				userLog.setStatusBot(status.FINDEMP);
-				break;
-			}
-//			case "ขอทราบ ข้อมูลวันหยุดค่ะ"{
-			case "วัยหยุด": {
-//				String pathYamlHome = "asset/sub_select_event.yml";
-//				String pathImageHome = "asset/sub_select_event.jpg";
-//				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, userLog.getUserID());
-				this.reply(replyToken, Arrays.asList(new TextMessage("เลือกเมนูที่ต้องการ ได้เลยค่ะ  ??")));
+						Arrays.asList(new TextMessage("1. ให้ผู้ใช้เช็ครูปลำโพงที่หน้าจอ"+ "\n" + "2. ตั้งค่าใน Sound\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-			case "อาหาร": {
-//				String pathYamlHome = "asset/foodVote.yml";
-//				String pathImageHome = "asset/foodVote.jpg";
-//				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, userLog.getUserID());
-				this.reply(replyToken, Arrays.asList(new TextMessage("เลือกเมนูที่ต้องการ ได้เลยค่ะ  ??")));
-				userLog.setStatusBot(status.DEFAULT);
-				break;
+//			case "ขอท"{
+			case "เครื่องดับเอง": {
+				this.reply(replyToken,
+				Arrays.asList(new TextMessage("1. ปลั๊กไฟหลวม")));
+		userLog.setStatusBot(status.DEFAULT);
+		break;
+			}
+			case "ไฟล์งานหาย": {
+//				this.reply(replyToken,
+				Arrays.asList(new TextMessage("1. หาให้ถังขยะ ไปที่ถังขยะและพิมชื่อไฟล์ที่หายไป")));
+		userLog.setStatusBot(status.DEFAULT);
+		break;
 			}
 //			case "ขอทราบวันหยุด ทั้งหมดภายในปีนี้ค่ะ"{
 			case "ทั้งหมด": {
