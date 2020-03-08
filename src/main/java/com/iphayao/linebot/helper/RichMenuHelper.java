@@ -7,7 +7,6 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.ACCEPT_SINGL
 import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 import static com.google.common.util.concurrent.Futures.getUnchecked;
-import static javax.activation.FileTypeMap.getDefaultFileTypeMap;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -70,17 +69,16 @@ public class RichMenuHelper {
 
     private static void imageUploadRichMenu(LineMessagingClient client,
                                             String richMenuId, String path) throws IOException {
-        String contentType = getDefaultFileTypeMap().getContentType(path);
-        log.info("Content-type: {}", contentType);
-
-        InputStream is = new ClassPathResource(path).getInputStream();
-        byte[] bytes = ByteStreams.toByteArray(is);
-        
-//        byte[] bytes = Files.readAllBytes(Paths.get(path));
-
-        BotApiResponse botApiResponse = getUnchecked(client.setRichMenuImage(richMenuId, contentType, bytes));
-        log.info("Successfully finished");
-        log.info("{}", botApiResponse);
+//        log.info("Content-type: {}", contentType);
+//
+//        InputStream is = new ClassPathResource(path).getInputStream();
+//        byte[] bytes = ByteStreams.toByteArray(is);
+//        
+////        byte[] bytes = Files.readAllBytes(Paths.get(path));
+//
+//        BotApiResponse botApiResponse = getUnchecked(client.setRichMenuImage(richMenuId, contentType, bytes));
+//        log.info("Successfully finished");
+//        log.info("{}", botApiResponse);
     }
 
     private static void deletedRichMenu(LineMessagingClient client, String richMenuId) {
