@@ -10,10 +10,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 
-@SpringBootApplication(scanBasePackages = { "com.pico.communication.controller"
-		,"com.pico.communication.service"
-		,"com.pico.communication.config"
-		,"com.pico.communication.dao"})
+@SpringBootApplication(scanBasePackages = { "com.iphayao.linebot"
+,"com.iphayao.repository"
+,"com.iphayao.service"
+,"com.iphayao.linenotify"})
 public class LineApplication extends SpringBootServletInitializer {
 	public static Path downloadedContentDir;
     public static void main(String[] args) throws IOException {
