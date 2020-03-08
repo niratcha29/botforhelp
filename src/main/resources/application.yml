@@ -1,17 +1,17 @@
 
 line.bot:
-  channel-token: 'Put Your Channel Token Here.'
-  channel-secret: 'Put Your Channel Token Here.'
+  channel-token: 'p2k3KpokGqaIKrKVg/kJbPMNTJ8awjpfErhKxrrn7yX8D+rc/FVufgONbxjbCAlEDZpSEIAtYvdlF7vuA7lxJDoDtvbFmMjYyYhM5DW0SUVxZckJ9tSUjXmqJ0FDKr/AgEr2m1IrXLmpkNGtepX5vwdB04t89/1O/w1cDnyilFU='
+  channel-secret: '7125026d671d53053bf2b10282ef1631'
   handler.path: /callback
   
 spring.datasource:
   platform: postgres
   driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://ec2-52-77-234-86.ap-southeast-1.compute.amazonaws.com:27348/ssline?sslmode=disable
-  username: ssline
-  password: ssline^1999
+  url: jdbc:postgresql://ajsavjbh:vITYH8boTbfrNqtwqZlbo4HnPLh3TgP5@drona.db.elephantsql.com:5432/ajsavjbh?sslmode=disable
+  username: ajsavjbh
+  password: vITYH8boTbfrNqtwqZlbo4HnPLh3TgP5
   
-  server:
-  port: 8080
-  servlet:
-   contextPath: /api
+server:
+ port: 8080
+ servlet:
+  contextPath: /api
