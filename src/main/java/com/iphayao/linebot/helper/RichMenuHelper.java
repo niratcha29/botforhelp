@@ -122,4 +122,3 @@ public class RichMenuHelper {
         return OBJECT_MAPPER.convertValue(yamlAsObject, RichMenu.class);
     }
 }
-

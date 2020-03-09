@@ -150,7 +150,7 @@ public class LineBotController {
 			case "รายชื่อปัญหา": {
 				String pathYamlHome = "asset/richmenu-home.yml";
 				String pathImageHome = "asset/richmenu-home.jpg";
-				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, replyToken);
+				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, userLog.getUserID());
 				break;
 			}
 			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
