@@ -14,7 +14,7 @@ areas:
   action:
     type: message
     label: message
-    text: 'เปิดใช้คอมพิวเตอร์ไม่ได้'
+    text: 'เปิดใช้งานคอมพิวเตอร์ไม่ได้'
 -
   bounds:
     x: 834
