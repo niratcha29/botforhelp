@@ -13,7 +13,7 @@ areas:
     height: 843
   action:
     type: message
-    label: เปิดใช้คอมพิวเตอร์ไม่ได้
+    label: message
     text: 'เปิดใช้คอมพิวเตอร์ไม่ได้'
 -
   bounds:
@@ -23,7 +23,7 @@ areas:
     height: 843
   action:
     type: message
-    label: ลำโพงเสียงไม่ดัง
+    label: message
     text: 'ลำโพงเสียงไม่ดัง'
 -
   bounds:
@@ -33,7 +33,7 @@ areas:
     height: 843
   action:
     type: message
-    label: คอมพิวเตอร์ดับเอง
+    label: message
     text: 'คอมพิวเตอร์ดับเอง'
 -
   bounds:
@@ -43,7 +43,7 @@ areas:
     height: 843
   action:
     type: message
-    label: ไฟล์งานหาย
+    label: message
     text: 'ไฟล์งานหาย'
 -
   bounds:
@@ -53,7 +53,7 @@ areas:
     height: 843
   action:
     type: message
-    label: อินเตอร์เน็ตใช้งานไม่ได้
+    label: message
     text: 'อินเตอร์เน็ตใช้งานไม่ได้'
 -
   bounds:
@@ -63,5 +63,5 @@ areas:
     height: 843
   action:
     type: message
-    label: ย้อนกลับ
+    label: message
     text: 'ย้อนกลับ'
