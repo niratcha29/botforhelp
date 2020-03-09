@@ -148,10 +148,9 @@ public class LineBotController {
 		if (userLog.getStatusBot().equals(status.DEFAULT)) {
 			switch (text) {
 			case "รายชื่อปัญหา": {
-				this.reply(replyToken,
-						Arrays.asList(new TextMessage("1. เปิดใช้งานคอมพิวเตอร์ไม่ได้"+ "\n" + "2. ลำโพงเสียงไม่ดัง\n" + 
-								"3. เครื่องคอมพิวเตอร์ดับเอง")));
-				userLog.setStatusBot(status.DEFAULT);
+				String pathYamlHome = "asset/richmenu-home.yml";
+				String pathImageHome = "asset/richmenu-home.jpg";
+				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, userLog.getUserID());
 				break;
 			}
 			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
