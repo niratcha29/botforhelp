@@ -2,8 +2,8 @@ size:
   width: 2500
   height: 1686
 selected: false
-name: Home
-chatBarText: 'กรุณา เลือกเมนูคะ'
+name: Pico
+chatBarText: 'Menu'
 areas:
 -
   bounds:
@@ -13,8 +13,8 @@ areas:
     height: 843
   action:
     type: message
-    label: profile
-    text: 'profile'
+    label: 'เปิดใช้คอมพิวเตอร์ไม่ได้'
+    text: 'เปิดใช้คอมพิวเตอร์ไม่ได้'
 -
   bounds:
     x: 834
@@ -23,8 +23,8 @@ areas:
     height: 843
   action:
     type: message
-    label: echo
-    text: 'Flex Restaurant'
+    label: 'ลำโพงเสียงไม่ดัง'
+    text: 'ลำโพงเสียงไม่ดัง'
 -
   bounds:
     x: 1667
@@ -33,8 +33,8 @@ areas:
     height: 843
   action:
     type: message
-    label: more
-    text: 'Flex Receipt'
+    label: 'คอมพิวเตอร์ดับเอง'
+    text: 'คอมพิวเตอร์ดับเอง'
 -
   bounds:
     x: 0
@@ -43,15 +43,25 @@ areas:
     height: 843
   action:
     type: message
-    label: unlink
-    text: 'carousel'
+    label: 'ไฟล์งานหาย'
+    text: 'ไฟล์งานหาย'
 -
   bounds:
     x: 834
     y: 843
-    width: 1666
+    width: 833
     height: 843
   action:
     type: message
-    label: unlink
-    text: 'สอบถาม ข้อมูลทั่วไป'
+    label: 'อินเตอร์เน็ตใช้งานไม่ได้'
+    text: 'อินเตอร์เน็ตใช้งานไม่ได้'
+-
+  bounds:
+    x: 1667
+    y: 843
+    width: 833
+    height: 843
+  action:
+    type: message
+    label: 'ย้อนกลับ'
+    text: 'ย้อนกลับ'

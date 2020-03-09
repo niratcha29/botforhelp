@@ -253,10 +253,15 @@ public class LineBotController {
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-			case "Flex": {
+			case "เมนูถัดไป": {
 				String pathYamlHome = "asset/richmenu-home.yml";
 				String pathImageHome = "asset/richmenu-home.jpg";
 				RichMenuHelper.createRichMenu(lineMessagingClient, pathYamlHome, pathImageHome, userLog.getUserID());
+				break;
+			}
+			case "ย้อนกลับ": {
+				RichMenuHelper.deleteRichMenu(lineMessagingClient,userLog.getUserID());
+				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
 			case "สอบถาม ข้อมูลทั่วไป": {
