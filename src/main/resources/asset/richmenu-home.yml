@@ -34,7 +34,7 @@ areas:
   action:
     type: message
     label: message
-    text: 'คอมพิวเตอร์ดับเอง'
+    text: 'เครื่องคอมพิวเตอร์ดับเอง'
 -
   bounds:
     x: 0
