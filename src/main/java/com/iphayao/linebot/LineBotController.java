@@ -147,7 +147,13 @@ public class LineBotController {
 
 		if (userLog.getStatusBot().equals(status.DEFAULT)) {
 			switch (text) {
-//			case "รายชื่อปัญหา": {
+			case "รายชื่อปัญหา": {
+				this.reply(replyToken,
+						Arrays.asList(new TextMessage("1. เปิดใช้งานคอมพิวเตอร์ไม่ได้"+ "\n" + "2. ลำโพงเสียงไม่ดัง\n" + 
+								"3. เครื่องคอมพิวเตอร์ดับเอง")));
+				userLog.setStatusBot(status.DEFAULT);
+				break;
+			}
 			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
 				logRepo.saveLog("เปิดใช้งานคอมพิวเตอร์ไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
