@@ -147,38 +147,47 @@ public class LineBotController {
 
 		if (userLog.getStatusBot().equals(status.DEFAULT)) {
 			switch (text) {
-//			case "ขอดูรายการอาหารทั้งหมดค่ะ": {
-			case "เปิดเครื่องไม่ได้": {
-				logRepo.saveLog("เปิดเครื่องไม่ได้",userLog.getUserID());
+//			case "รายชื่อปัญหา": {
+			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
+				logRepo.saveLog("เปิดใช้งานคอมพิวเตอร์ไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("1. ไม่ได้เสียบปลั๊ก"+ "\n" + "2. สายไฟไม่แน่น\n" + 
-								"3. ไม่ได้เปิดสวิตไฟ")));
+						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
+								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-			case "เสียงไม่ดัง": {
-				logRepo.saveLog("เสียงไม่ดัง",userLog.getUserID());
+			case "ลำโพงเสียงไม่ดัง": {
+				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("1. ให้ผู้ใช้เช็ครูปลำโพงที่หน้าจอ"+ "\n" + "2. ตั้งค่าใน Sound\n")));
+						Arrays.asList(new TextMessage("1. ตรวจสอบว่าเปิดใช้งานลำโพงหรือไม่ (ดูที่สัญญาลักษณ์รูปลำโพงที่หน้าจอด้านล่างขวา)\n" + 
+								""+ "\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามนี้ลิ้งค์ https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
+										"\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-//			case "ขอท"{
-			case "เครื่องดับเอง": {
-				logRepo.saveLog("เครื่องดับเอง",userLog.getUserID());
+			case "เครื่องคอมพิวเตอร์ดับเอง": {
+				logRepo.saveLog("เครื่องคอมพิวเตอร์ดับเอง",userLog.getUserID());
 				this.reply(replyToken,
-				Arrays.asList(new TextMessage("1. ปลั๊กไฟหลวม")));
+				Arrays.asList(new TextMessage("ตรวจสอบสายปลั๊กไฟต่างๆว่าเสียบแน่นหรือไม่")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
 			case "ไฟล์งานหาย": {
 				logRepo.saveLog("ไฟล์งานหาย",userLog.getUserID());
 				this.reply(replyToken,
-				Arrays.asList(new TextMessage("1. หาให้ถังขยะ ไปที่ถังขยะและพิมชื่อไฟล์ที่หายไป")));
+				Arrays.asList(new TextMessage("ขั้นตอนตามลิ้งค์ต่อไปนี้ http://th.wondershare.com/recover-data/recover-deleted-word-document.html?fbclid=IwAR1JQkQ_erJ8mnbH8M63KF-JtQ90HXu-fRTG6zZ2Qu04tFoFvgGIvm7P3-Y\n" + 
+						"")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
-//			case "ขอทราบวันหยุด ทั้งหมดภายในปีนี้ค่ะ"{
+			case "อินเตอร์เน็ตใช้งานไม่ได้": {
+				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
+				this.reply(replyToken,
+						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
+								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
+				userLog.setStatusBot(status.DEFAULT);
+				break;
+			}
 			case "ทั้งหมด": {
 				String Holiday_In_Year = holiday.getAllHoliday();
 				this.reply(replyToken,
@@ -186,7 +195,6 @@ public class LineBotController {
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
-		//	case "ขอทราบวันหยุด ที่จะถึงเร็วๆนี้ค่ะ": {
 			case "เร็วๆ": {
 				String holidaySoon = holiday.getHolidaySoon();
 				this.reply(replyToken, Arrays.asList(new TextMessage(holidaySoon)));
