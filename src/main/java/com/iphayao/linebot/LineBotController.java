@@ -89,7 +89,7 @@ public class LineBotController {
 	private Map<String, UserLog> userMap = new HashMap<String, UserLog>();
 
 	@EventMapping
-	public void handleTextMessage(MessageEvent<TextMessageContent> event) throws IOException {
+	public void handleTextMessage(MessageEvent<TextMessageContent> event) throws IOException, InterruptedException, ExecutionException {
 		log.info(event.toString());
 		TextMessageContent message = event.getMessage();
 		handleTextContent(event.getReplyToken(), event, message);
