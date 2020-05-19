@@ -159,7 +159,7 @@ public class LineBotController {
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
 				this.reply(replyToken, 
-						new ImageMessage("img.in.th/image/UwFahu".getUri()));
+						new ImageMessage(img.in.th/image/UwFahu.getUri()));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
