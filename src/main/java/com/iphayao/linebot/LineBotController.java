@@ -158,8 +158,8 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
-								new ImageMessage("https://dx.lnwfile.com/josya7.png",
-										"https://dx.lnwfile.com/josya7.png")));
+								new ImageMessage("https://www.dohome.co.th/media/catalog/product/cache/2/image/255x255/9df78eab33525d08d6e5fb8d27136e95/1/0/10007023_EA_1200_1.jpg",
+										"https://www.dohome.co.th/media/catalog/product/cache/2/image/255x255/9df78eab33525d08d6e5fb8d27136e95/1/0/10007023_EA_1200_1.jpg")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
