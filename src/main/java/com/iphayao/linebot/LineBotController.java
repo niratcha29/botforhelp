@@ -174,7 +174,7 @@ public class LineBotController {
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
 										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg\n"),
 								
 								new TextMessage("หรือตั้งค่า Sound ตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
 									"หรือแก้ไขตามวิธีการขั้นตอนตามลิงค์นี้ https://notebookspec.com/sound-mix-volume/463316/")));
