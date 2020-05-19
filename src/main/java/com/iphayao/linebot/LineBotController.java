@@ -156,8 +156,8 @@ public class LineBotController {
 			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
 				logRepo.saveLog("เปิดใช้งานคอมพิวเตอร์ไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8",
-								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8"),
+						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97148396_593933231471770_8662296832363200512_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGqqAddx9vs-I68PAE_QwIpkyyztZ-BbPmTLLO1n4Fs-SDs0_6ds93k8VAprorileg0YfkPcFBHeAgy9N14dvBH&_nc_ohc=gy_PCgu4xMAAX_J7jSP&_nc_ht=scontent.fbkk20-1.fna&oh=361ed881bab114f6bd0cb2f1aa36b083&oe=5EEA8154",
+								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97148396_593933231471770_8662296832363200512_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGqqAddx9vs-I68PAE_QwIpkyyztZ-BbPmTLLO1n4Fs-SDs0_6ds93k8VAprorileg0YfkPcFBHeAgy9N14dvBH&_nc_ohc=gy_PCgu4xMAAX_J7jSP&_nc_ht=scontent.fbkk20-1.fna&oh=361ed881bab114f6bd0cb2f1aa36b083&oe=5EEA8154"),
 								new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
 								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8",
