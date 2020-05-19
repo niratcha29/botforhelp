@@ -115,11 +115,11 @@ public class LineBotController {
 		String replyToken = event.getReplyToken();
 
 		try {
-//			MessageContentResponse response = lineMessagingClient.getMessageContent(content.getId()).get();
-//			DownloadedContent jpg = saveContent("jpg", response);
-//			DownloadedContent previewImage = createTempFile("jpg");
-//
-//			system("convert", "-resize", "240x", jpg.path.toString(), previewImage.path.toString());
+			MessageContentResponse response = lineMessagingClient.getMessageContent(content.getId()).get();
+			DownloadedContent jpg = saveContent("jpg", response);
+			DownloadedContent previewImage = createTempFile("jpg");
+
+			system("convert", "-resize", "240x", jpg.path.toString(), previewImage.path.toString());
 
 			reply(replyToken, new ImageMessage(jpg.getUri(), previewImage.getUri()));
 
@@ -158,8 +158,8 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
-				this.reply(replyToken, 
-						new ImageMessage(img.in.th/image/UwFahu.getUri()));
+				reply(replyToken, 
+						new ImageMessage("https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg", "https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg"));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
@@ -167,7 +167,7 @@ public class LineBotController {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าเปิดใช้งานลำโพงหรือไม่ (ดูที่สัญญาลักษณ์รูปลำโพงที่หน้าจอด้านล่างขวา)\n" + 
-								""+ "\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามนี้ลิ้งค์ https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
+								""+ "\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
 										"\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
@@ -182,7 +182,7 @@ public class LineBotController {
 			case "ไฟล์งานหาย": {
 				logRepo.saveLog("ไฟล์งานหาย",userLog.getUserID());
 				this.reply(replyToken,
-				Arrays.asList(new TextMessage("ขั้นตอนตามลิ้งค์ต่อไปนี้ http://th.wondershare.com/recover-data/recover-deleted-word-document.html?fbclid=IwAR1JQkQ_erJ8mnbH8M63KF-JtQ90HXu-fRTG6zZ2Qu04tFoFvgGIvm7P3-Y\n" + 
+				Arrays.asList(new TextMessage("ขั้นตอนตามลิ้งค์ต่อไปนี้  http://th.wondershare.com/recover-data/recover-deleted-word-document.html?fbclid=IwAR1JQkQ_erJ8mnbH8M63KF-JtQ90HXu-fRTG6zZ2Qu04tFoFvgGIvm7P3-Y\n" + 
 						"")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
