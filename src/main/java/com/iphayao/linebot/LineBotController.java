@@ -115,11 +115,11 @@ public class LineBotController {
 		String replyToken = event.getReplyToken();
 
 		try {
-			MessageContentResponse response = lineMessagingClient.getMessageContent(content.getId()).get();
-			DownloadedContent jpg = saveContent("jpg", response);
-			DownloadedContent previewImage = createTempFile("jpg");
-
-			system("convert", "-resize", "240x", jpg.path.toString(), previewImage.path.toString());
+//			MessageContentResponse response = lineMessagingClient.getMessageContent(content.getId()).get();
+//			DownloadedContent jpg = saveContent("jpg", response);
+//			DownloadedContent previewImage = createTempFile("jpg");
+//
+//			system("convert", "-resize", "240x", jpg.path.toString(), previewImage.path.toString());
 
 			reply(replyToken, new ImageMessage(jpg.getUri(), previewImage.getUri()));
 
@@ -158,6 +158,8 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
+				this.reply(replyToken, 
+						new ImageMessage("img.in.th/image/UwFahu".getUri()));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
