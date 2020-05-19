@@ -174,7 +174,18 @@ public class LineBotController {
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
 										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg")));
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
+								
+								new TextMessage("ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg"),
+								new TextMessage("2.View by : Large icon มุมขวาบน > จากนั้นเลือก Sound > Tab : Playback > เลือก จากนั้นคลิกที่ Speaker > เลือก Properties\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg"),
+								new TextMessage("3.Tab : Advance ลองกด Test ดูว่ามีเสียงหรือไม่\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเลือกหูฟัง ก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n" + "จากนั้นก็กด OK เพื่อทำการ Save  และทำการทดสอบการเปิดเพลง (ในภาพมีลำโพงอยู่ตัวเดียวเพราะฉะนั้นค่าเลยเป็น Default Drive อยู่แล้ว )\n" + 
+												"ถ้าไม่มั่นใจว่าจะเลือกอันไหนให้คลิก Restore Defaults (มุมซ้ายล่าง)  จากนั้นทำการทดสอบอีกครั้ง และกด OK\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
