@@ -195,8 +195,9 @@ public class LineBotController {
 				logRepo.saveLog("ไฟล์งานหาย",userLog.getUserID());
 				this.reply(replyToken,
 				Arrays.asList(new TextMessage("วิธีการกู้ไฟล์ต่าง ๆ ที่หายไป ลองทำตามลิ้งค์เหล่านี้"),
-						new TextMessage("http://th.wondershare.com/recover-data/recover-deleted-word-document.html\n" + 
-						"https://www.thailand.intel.com/content/www/th/th/tech-tips-and-tricks/recover-deleted-files.html\n" + "https://th.wikihow.com/%E0%B8%81%E0%B8%B9%E0%B9%89%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%A5%E0%B8%9A%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C\n")));
+						new TextMessage("วิธีการกู้ไฟล์เอกสาร Word ที่อาจถูกลบ ทำตามขั้นตอนตามลิ้งค์นี้  http://th.wondershare.com/recover-data/recover-deleted-word-document.html\n" + 
+						"วิธีการกู้ไฟล์ที่ถูกลบ ทำขั้นตอนตามลิ้งค์นี้  https://www.thailand.intel.com/content/www/th/th/tech-tips-and-tricks/recover-deleted-files.html\n" + 
+						"วิธีการกู้ไฟล์ที่ถูกลบจากคอมพิวเตอร์ ทำขั้นตอนตามลิ้งค์นี้  https://th.wikihow.com/%E0%B8%81%E0%B8%B9%E0%B9%89%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%A5%E0%B8%9A%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C\n")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
