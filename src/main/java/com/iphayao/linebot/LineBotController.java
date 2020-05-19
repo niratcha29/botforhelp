@@ -159,15 +159,6 @@ public class LineBotController {
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
 				userLog.setStatusBot(status.DEFAULT);
-				
-				MessageContentResponse response = lineMessagingClient.getMessageContent(content.getId()).get();
-				DownloadedContent jpg = saveContent("jpg", response);
-				DownloadedContent previewImage = createTempFile("jpg");
-
-				system("convert", "-resize", "240x", jpg.path.toString(), previewImage.path.toString());
-
-				reply(replyToken, new ImageMessage(jpg.getUri(), previewImage.getUri()));
-
 				break;
 			}
 			case "ลำโพงเสียงไม่ดัง": {
