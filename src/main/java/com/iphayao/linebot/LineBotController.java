@@ -158,8 +158,9 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F",
 								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F"),
-								new TextMessage("1.ดูว่าปลั๊กไฟตามรูปถูกเสียบอยู่หรือไม่"+ "\n" + "2.ดูว่าเสียบปลั๊กไฟตามรูปแน่นหรือไม่\n"),new ImageMessage("https://www.baanandbeyond.com/media/catalog/product/cache/image/550x/beff4985b56e3afdbeabfc89641a4582/6/0/60041294.jpg",
-										"https://www.baanandbeyond.com/media/catalog/product/cache/image/550x/beff4985b56e3afdbeabfc89641a4582/6/0/60041294.jpg"),
+								new TextMessage("1.ดูว่าปลั๊กไฟตามรูปถูกเสียบอยู่หรือไม่"+ "\n" + "2.ดูว่าเสียบปลั๊กไฟตามรูปแน่นหรือไม่\n"),
+								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50",
+										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50"),
 								new TextMessage("3.ดูสวิตซ์ไฟว่าเปิดหรือไม่" + "\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
@@ -167,13 +168,27 @@ public class LineBotController {
 			case "ลำโพงเสียงไม่ดัง": {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + 
-								"1.คลิกขวาที่ Start > ทำการเลือก Device Manager\n" + "2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
-										"3.จะเห็น High Definition Audio Device (กรณีลง Realtek จะขึ้นเป็น Realtek High Definition Audio ) ให้ทำการคลิกขวา และเลือก Properties > จากนั้นดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n" + "\n" +
-										"ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n" + "2.View by : Large icon มุมขวาบน > จากนั้นเลือก Sound > Tab : Playback > เลือก จากนั้นคลิกที่ Speaker > เลือก Properties\n" + "3.Tab : Advance ลองกด Test ดูว่ามีเสียงหรือไม่\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเลือกหูฟัง ก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n" + "จากนั้นก็กด OK เพื่อทำการ Save  และทำการทดสอบการเปิดเพลง (ในภาพมีลำโพงอยู่ตัวเดียวเพราะฉะนั้นค่าเลยเป็น Default Drive อยู่แล้ว )\n" + 
-												"ถ้าไม่มั่นใจว่าจะเลือกอันไหนให้คลิก Restore Defaults (มุมซ้ายล่าง)  จากนั้นทำการทดสอบอีกครั้ง และกด OK\n" + "ตั้งค่า Playback Windows\n" + "1.ไปที่ Search จากนั้นพิมพ์ Sound\n" + "2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + 
-												"\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
-										"\n")));
+						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + "1.คลิกขวาที่ Start > ทำการเลือก Device Manager\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg"),
+								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
+										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n" + "\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
+								
+								new TextMessage("ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg"),
+								new TextMessage("2.View by : Large icon มุมขวาบน > จากนั้นเลือก Sound > Tab : Playback > เลือก จากนั้นคลิกที่ Speaker > เลือก Properties\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg"),
+								new TextMessage("3.Tab : Advance ลองกด Test ดูว่ามีเสียงหรือไม่\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเลือกหูฟัง ก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n" + "จากนั้นก็กด OK เพื่อทำการ Save  และทำการทดสอบการเปิดเพลง (ในภาพมีลำโพงอยู่ตัวเดียวเพราะฉะนั้นค่าเลยเป็น Default Drive อยู่แล้ว )\n" + 
+												"ถ้าไม่มั่นใจว่าจะเลือกอันไหนให้คลิก Restore Defaults (มุมซ้ายล่าง)  จากนั้นทำการทดสอบอีกครั้ง และกด OK\n"),
+								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg",
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg"),
+								
+								new TextMessage("ตั้งค่า Playback Windows\n" + "1.ไปที่ Search จากนั้นพิมพ์ Sound\n" + "2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + 
+												"\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
