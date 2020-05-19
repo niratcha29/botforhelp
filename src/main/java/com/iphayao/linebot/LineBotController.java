@@ -158,21 +158,21 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F",
 								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F"),
-								new TextMessage("1.ดูว่าปลั๊กไฟตามรูปถูกเสียบอยู่หรือไม่"+ "\n" + "2.ดูว่าเสียบปลั๊กไฟตามรูปแน่นหรือไม่\n"),
+								new TextMessage("1.ดูว่าปลั๊กไฟตามรูปถูกเสียบอยู่หรือไม่"+ "\n" + "2.ดูว่าเสียบปลั๊กไฟตามรูปแน่นหรือไม่"),
 								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50",
 										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50"),
-								new TextMessage("3.ดูสวิตซ์ไฟว่าเปิดหรือไม่" + "\n")));
+								new TextMessage("3.ดูสวิตซ์ไฟว่าเปิดหรือไม่")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
 			case "ลำโพงเสียงไม่ดัง": {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + "1.คลิกขวาที่ Start > ทำการเลือก Device Manager\n"),
+						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + "1.คลิกขวาที่ Start > ทำการเลือก Device Manager"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg"),
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
-										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
+										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
 								
@@ -206,8 +206,8 @@ public class LineBotController {
 								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96852310_239641824119966_8323978732289130496_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeEijcb-cteyS7am1dARC6klM3RfR1BalSszdF9HUFqVKwljBZwuvIDTQXOR_IlOhnXlXXzNepPM-1Gketr1gN2J&_nc_ohc=IXcAMIHP7_4AX-MoL0R&_nc_ht=scontent.fbkk20-1.fna&oh=eb7500efac2f93fcccbf192dc813c95e&oe=5EE87B0C",
 										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96852310_239641824119966_8323978732289130496_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeEijcb-cteyS7am1dARC6klM3RfR1BalSszdF9HUFqVKwljBZwuvIDTQXOR_IlOhnXlXXzNepPM-1Gketr1gN2J&_nc_ohc=IXcAMIHP7_4AX-MoL0R&_nc_ht=scontent.fbkk20-1.fna&oh=eb7500efac2f93fcccbf192dc813c95e&oe=5EE87B0C"),
 								new TextMessage("ตรวจสอบสัญญาณอินเตอร์เน็ต\n" + "หากที่สัญญาณอินเตอร์เน็ตขึ้นเครื่องหมายตกใจ\n" + "สำหรับ window 7 ลองทำตามลิ้งค์ต่อไปนี้ https://www.windowssiam.com/problem-windows-7-ip-address/" + "\n" + 
-											"สำหรับ window 10 ลองทำตามลิ้งค์ต่อไปนี้ https://answers.microsoft.com/th-th/windows/forum/all/%E0%B8%A7%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A710/d4bee942-e7c0-49b9-8cf3-a3f773d9b73a\n"),
-								new TextMessage("หรือทำตรวจสอบปัญหาตามลิ้งค์นี้ https://www.techhub.in.th/network-disconnected/")));
+											"สำหรับ window 10 ลองทำตามลิ้งค์ต่อไปนี้ https://answers.microsoft.com/th-th/windows/forum/all/%E0%B8%A7%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A710/d4bee942-e7c0-49b9-8cf3-a3f773d9b73a\n" + 
+											"หรือทำตรวจสอบปัญหาตามลิ้งค์นี้ https://www.techhub.in.th/network-disconnected/")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
