@@ -168,14 +168,7 @@ public class LineBotController {
 			case "ลำโพงเสียงไม่ดัง": {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + "1.คลิกขวาที่ Start > ทำการเลือก Device Manager\n"),
-								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg"),
-								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
-										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
-								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
-								
+						Arrays.asList(
 								new TextMessage("ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg"),
