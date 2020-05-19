@@ -203,7 +203,7 @@ public class LineBotController {
 				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + "2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)\n"),
-								));
+								new TextMessage("https://www.techhub.in.th/network-disconnected/")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
