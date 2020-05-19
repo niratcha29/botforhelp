@@ -156,12 +156,11 @@ public class LineBotController {
 			case "เปิดใช้งานคอมพิวเตอร์ไม่ได้": {
 				logRepo.saveLog("เปิดใช้งานคอมพิวเตอร์ไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97148396_593933231471770_8662296832363200512_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGqqAddx9vs-I68PAE_QwIpkyyztZ-BbPmTLLO1n4Fs-SDs0_6ds93k8VAprorileg0YfkPcFBHeAgy9N14dvBH&_nc_ohc=gy_PCgu4xMAAX_J7jSP&_nc_ht=scontent.fbkk20-1.fna&oh=361ed881bab114f6bd0cb2f1aa36b083&oe=5EEA8154",
-								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97148396_593933231471770_8662296832363200512_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGqqAddx9vs-I68PAE_QwIpkyyztZ-BbPmTLLO1n4Fs-SDs0_6ds93k8VAprorileg0YfkPcFBHeAgy9N14dvBH&_nc_ohc=gy_PCgu4xMAAX_J7jSP&_nc_ht=scontent.fbkk20-1.fna&oh=361ed881bab114f6bd0cb2f1aa36b083&oe=5EEA8154"),
-								new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
-								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
-								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8",
-										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8")));
+						Arrays.asList(new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F",
+								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/90148413_585082952088954_752638562733654016_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeGQfaZBFSiSxo5iJEm3rggtng22Rdqt3PmeDbZF2q3c-dPDG8x9dai5-xj4BSQg4fWSk96VyDLFfkqbsNk6_X4H&_nc_ohc=XqQ0uKpmr_8AX9r2teY&_nc_ht=scontent.fbkk20-1.fna&oh=455e4cf5f48e511e10509b26ecaf0cbe&oe=5EE9457F"),
+								new TextMessage("1.ดูว่าปลั๊กไฟตามรูปถูกเสียบอยู่หรือไม่"+ "\n" + "2.ดูว่าเสียบปลั๊กไฟตามรูปแน่นหรือไม่\n"),new ImageMessage("https://www.baanandbeyond.com/media/catalog/product/cache/image/550x/beff4985b56e3afdbeabfc89641a4582/6/0/60041294.jpg",
+										"https://www.baanandbeyond.com/media/catalog/product/cache/image/550x/beff4985b56e3afdbeabfc89641a4582/6/0/60041294.jpg"),
+								new TextMessage("3.ดูสวิตซ์ไฟว่าเปิดหรือไม่" + "\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
