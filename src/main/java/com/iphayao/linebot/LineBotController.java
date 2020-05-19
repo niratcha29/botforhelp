@@ -169,16 +169,7 @@ public class LineBotController {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(
-								new TextMessage("ตั้งค่า Playback Windows\n"),
-								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F",
-										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F"),
-								new TextMessage("1.ไปที่ Search จากนั้นพิมพ์ Sound\n"),
-								new TextMessage("2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเราเลือกหูฟัง เราก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n"),
-								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC",
-										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC"),
-								
-								new TextMessage("หรือตั้งค่า Sound ตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n"),
-								new TextMessage("หรือแก้ไขตามวิธีการขั้นตอนตามลิงค์นี้ https://notebookspec.com/sound-mix-volume/463316/")));
+								new TextMessage("หรือตั้งค่า Sound ตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n" + "หรือแก้ไขตามวิธีการขั้นตอนตามลิงค์นี้ https://notebookspec.com/sound-mix-volume/463316/")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
