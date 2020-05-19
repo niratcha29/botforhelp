@@ -158,8 +158,8 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
-								new ImageMessage("http://image.free.in.th/v/2013/if/200519013611.jpg", 
-										"http://image.free.in.th/v/2013/if/200519013611.jpg")));
+								new ImageMessage("https://52north.github.io/javaPS/documentation_markdown/site/sequence_diagrams/workflow_wps_operations/UML_Diagrams/GetCapabilities_GET/GetCapabilities_coarse.png",
+										"https://52north.github.io/javaPS/documentation_markdown/site/sequence_diagrams/workflow_wps_operations/UML_Diagrams/GetCapabilities_GET/GetCapabilities_coarse.png")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
