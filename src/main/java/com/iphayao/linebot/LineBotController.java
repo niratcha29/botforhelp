@@ -166,8 +166,12 @@ public class LineBotController {
 			case "ลำโพงเสียงไม่ดัง": {
 				logRepo.saveLog("ลำโพงเสียงไม่ดัง",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("1. ตรวจสอบว่าเปิดใช้งานลำโพงหรือไม่ (ดูที่สัญญาลักษณ์รูปลำโพงที่หน้าจอด้านล่างขวา)\n" + 
-								""+ "\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
+						Arrays.asList(new TextMessage("ตรวจสอบ Device Manager : Sound\n" + 
+								"1.คลิกขวาที่ Start > ทำการเลือก Device Manager\n" + "2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
+										"3.จะเห็น High Definition Audio Device (กรณีลง Realtek จะขึ้นเป็น Realtek High Definition Audio ) ให้ทำการคลิกขวา และเลือก Properties > จากนั้นดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n" + 
+										"ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n" + "2.View by : Large icon มุมขวาบน > จากนั้นเลือก Sound > Tab : Playback > เลือก จากนั้นคลิกที่ Speaker > เลือก Properties\n" + "3.Tab : Advance ลองกด Test ดูว่ามีเสียงหรือไม่\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเลือกหูฟัง ก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n" + "จากนั้นก็กด OK เพื่อทำการ Save  และทำการทดสอบการเปิดเพลง (ในภาพมีลำโพงอยู่ตัวเดียวเพราะฉะนั้นค่าเลยเป็น Default Drive อยู่แล้ว )\n" + 
+												"ถ้าไม่มั่นใจว่าจะเลือกอันไหนให้คลิก Restore Defaults (มุมซ้ายล่าง)  จากนั้นทำการทดสอบอีกครั้ง และกด OK\n" + "ตั้งค่า Playback Windows\n" + "1.ไปที่ Search จากนั้นพิมพ์ Sound\n" + "2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + 
+												"\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + 
 										"\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
@@ -190,8 +194,8 @@ public class LineBotController {
 			case "อินเตอร์เน็ตใช้งานไม่ได้": {
 				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
-								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
+						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + 
+								"2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)" + "สายแลนและช่องเสียบสายแลนไม่เสีย แต่อินเตอร์เน็ตใช้ไม่ได้\n" + "1.คลิ๊กที่ปุ่มค้นหา ใกล้ StartMenu (ปุ่มแว่นขยาย) พิมพ์คำว่า Device Manager แล้ว Enter\n" + "2.คลิ๊กที่หัวข้อ Network Adapters  จะเห็นการ์ดแลน\n" + "3.เมื่อเอาเม้าส์ไปคลิ๊กขวาที่ การ์ดแลนซึ่งอยู่ใต้หัวข้อ Network Adapters  จะขึ้นคำว่า  Enable device ให้กด Enable device  การ์ดแลนก็จะกลับมาใช้งานได้ตามปกติ\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
