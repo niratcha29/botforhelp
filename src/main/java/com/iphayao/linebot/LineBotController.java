@@ -203,9 +203,7 @@ public class LineBotController {
 				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + "2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)\n"),
-								new TextMessage("ตรวจสอบสายอินเตอร์เน็ต" + "\n" + "สำหรับ window 7 ลองทำตามลิ้งค์ต่อไปนี้ https://www.windowssiam.com/problem-windows-7-ip-address/?fbclid=IwAR335E9flxyKRaGMCS9_ud9J2R3TsY-SHnBkPblya12jXnWPxW6gGUpjjs0\r\n" + 
-										"สำหรับ window 10 ลองทำตามลิ้งค์ต่อไปนี้ https://answers.microsoft.com/th-th/windows/forum/all/%E0%B8%A7%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A710/d4bee942-e7c0-49b9-8cf3-a3f773d9b73a?fbclid=IwAR0QThlQOugeUCxq5iileM1Mq5fhklVVXQkR-2Jeov7-C3H_JYboydwkl8k\n"),
-								new TextMessage("สายแลนและช่องเสียบสายแลนไม่เสีย แต่อินเตอร์เน็ตใช้ไม่ได้\n" + "1.คลิ๊กที่ปุ่มค้นหา ใกล้ StartMenu (ปุ่มแว่นขยาย) พิมพ์คำว่า Device Manager แล้ว Enter\n" + "2.คลิ๊กที่หัวข้อ Network Adapters  จะเห็นการ์ดแลน\n" + "3.เมื่อเอาเม้าส์ไปคลิ๊กขวาที่ การ์ดแลนซึ่งอยู่ใต้หัวข้อ Network Adapters  จะขึ้นคำว่า  Enable device ให้กด Enable device  การ์ดแลนก็จะกลับมาใช้งานได้ตามปกติ\n")));
+								));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
