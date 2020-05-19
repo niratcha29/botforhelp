@@ -158,8 +158,8 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
-								new ImageMessage("https://scontent.fbkk22-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/20232748_1547063911981069_6501677496568179945_o.jpg?_nc_cat=101&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_eui2=AeErKCb1bZ1JKTKJKbgE4S_Hdqzf0_fjdXN2rN_T9-N1c6m_T51h1OkrWxgre4f4rJq2xu2hyqpvqcy0rYVmaAjn&_nc_ohc=ErptiJuBMMAAX8dpMwq&_nc_ht=scontent.fbkk22-1.fna&_nc_tp=14&oh=86a234cd5201e9accd7e9f77750d58b5&oe=5EE7F117",
-										"https://scontent.fbkk22-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/20232748_1547063911981069_6501677496568179945_o.jpg?_nc_cat=101&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_eui2=AeErKCb1bZ1JKTKJKbgE4S_Hdqzf0_fjdXN2rN_T9-N1c6m_T51h1OkrWxgre4f4rJq2xu2hyqpvqcy0rYVmaAjn&_nc_ohc=ErptiJuBMMAAX8dpMwq&_nc_ht=scontent.fbkk22-1.fna&_nc_tp=14&oh=86a234cd5201e9accd7e9f77750d58b5&oe=5EE7F117")));
+								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8",
+										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/97495504_715077319239732_8787031513091801088_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_eui2=AeEO1HHmpfB1rCmENN_jLejZrrNT7LcoR8uus1PstyhHy6-3VePyeV9ogC-dqkIK4DrHitKCeKjIUAt7h0MDvWM4&_nc_ohc=YDKIZWIagmsAX-1PkgT&_nc_ht=scontent.fbkk20-1.fna&oh=4641e5376209bf27b648973475e7f3a7&oe=5EE7C5D8")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
