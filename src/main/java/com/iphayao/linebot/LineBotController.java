@@ -157,9 +157,8 @@ public class LineBotController {
 				logRepo.saveLog("เปิดใช้งานคอมพิวเตอร์ไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
-								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่")));
-				this.reply(replyToken, 
-						new ImageMessage("https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg", "https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg"));
+								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
+								new ImageMessage("https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg", "https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
