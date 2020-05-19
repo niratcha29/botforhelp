@@ -187,7 +187,7 @@ public class LineBotController {
 				Arrays.asList(new TextMessage("ตรวจสอบสายปลั๊กไฟต่างๆว่าเสียบแน่นหรือไม่\n"),
 							new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50",
 								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50"),
-							new TextMessage("หรือทำขั้นตอนตามลิงค์นี้ http://itnews4u.com/fix-computer-turn-off-automatically.html")));
+							new TextMessage("หรือทำขั้นตอนตามลิ้งค์นี้ http://itnews4u.com/fix-computer-turn-off-automatically.html")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
@@ -202,8 +202,12 @@ public class LineBotController {
 			case "อินเตอร์เน็ตใช้งานไม่ได้": {
 				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + "2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)\n"),
-								new TextMessage("https://www.techhub.in.th/network-disconnected/")));
+						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ดูว่าเปิดใช้งาน WiFi หรือไม่\n" + "2.ดูว่ากรอกรหัส WiFi (ภาษาถูกหรือไม่, เช็คพิมพ์เล็กพิมพ์ใหญ่)\n" + "3.ดูสายแลนว่าเสียบกับเคสแน่นหรือเสียบอยู่หรือไม่"),
+								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96852310_239641824119966_8323978732289130496_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeEijcb-cteyS7am1dARC6klM3RfR1BalSszdF9HUFqVKwljBZwuvIDTQXOR_IlOhnXlXXzNepPM-1Gketr1gN2J&_nc_ohc=IXcAMIHP7_4AX-MoL0R&_nc_ht=scontent.fbkk20-1.fna&oh=eb7500efac2f93fcccbf192dc813c95e&oe=5EE87B0C",
+										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96852310_239641824119966_8323978732289130496_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_eui2=AeEijcb-cteyS7am1dARC6klM3RfR1BalSszdF9HUFqVKwljBZwuvIDTQXOR_IlOhnXlXXzNepPM-1Gketr1gN2J&_nc_ohc=IXcAMIHP7_4AX-MoL0R&_nc_ht=scontent.fbkk20-1.fna&oh=eb7500efac2f93fcccbf192dc813c95e&oe=5EE87B0C"),
+								new TextMessage("ตรวจสอบสัญญาณอินเตอร์เน็ต\n" + "หากที่สัญญาณอินเตอร์เน็ตขึ้นเครื่องหมายตกใจ\n" + "สำหรับ window 7 ลองทำตามลิ้งค์ต่อไปนี้ https://www.windowssiam.com/problem-windows-7-ip-address/" + "\n" + 
+											"สำหรับ window 10 ลองทำตามลิ้งค์ต่อไปนี้ https://answers.microsoft.com/th-th/windows/forum/all/%E0%B8%A7%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A710/d4bee942-e7c0-49b9-8cf3-a3f773d9b73a\n"),
+								new TextMessage("หรือทำตรวจสอบปัญหาตามลิ้งค์นี้ https://www.techhub.in.th/network-disconnected/")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
