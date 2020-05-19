@@ -172,7 +172,7 @@ public class LineBotController {
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_1.jpg"),
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
-										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n" + "\n"),
+										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
 								
@@ -187,31 +187,44 @@ public class LineBotController {
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg",
 										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg"),
 								
-								new TextMessage("ตั้งค่า Playback Windows\n" + "1.ไปที่ Search จากนั้นพิมพ์ Sound\n" + "2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + 
-												"\n" + "2. ตั้งค่า Sound (ทำตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n")));
+								new TextMessage("ตั้งค่า Playback Windows\n"),
+								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F",
+										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F"),
+								new TextMessage("1.ไปที่ Search จากนั้นพิมพ์ Sound\n"),
+								new TextMessage("2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเราเลือกหูฟัง เราก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n"),
+								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC",
+										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC"),
+								
+								new TextMessage("หรือตั้งค่า Sound ตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n"),
+								new TextMessage("หรือแก้ไขตามวิธีการขั้นตอนตามลิงค์นี้ https://notebookspec.com/sound-mix-volume/463316/")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
 			case "เครื่องคอมพิวเตอร์ดับเอง": {
 				logRepo.saveLog("เครื่องคอมพิวเตอร์ดับเอง",userLog.getUserID());
 				this.reply(replyToken,
-				Arrays.asList(new TextMessage("ตรวจสอบสายปลั๊กไฟต่างๆว่าเสียบแน่นหรือไม่")));
+				Arrays.asList(new TextMessage("ตรวจสอบสายปลั๊กไฟต่างๆว่าเสียบแน่นหรือไม่\n"),
+							new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50",
+								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50"),
+							new TextMessage("หรือทำขั้นตอนตามลิงค์นี้ http://itnews4u.com/fix-computer-turn-off-automatically.html")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
 			case "ไฟล์งานหาย": {
 				logRepo.saveLog("ไฟล์งานหาย",userLog.getUserID());
 				this.reply(replyToken,
-				Arrays.asList(new TextMessage("ขั้นตอนตามลิ้งค์ต่อไปนี้  http://th.wondershare.com/recover-data/recover-deleted-word-document.html?fbclid=IwAR1JQkQ_erJ8mnbH8M63KF-JtQ90HXu-fRTG6zZ2Qu04tFoFvgGIvm7P3-Y\n" + 
-						"")));
+				Arrays.asList(new TextMessage("ไฟล์งานเอกสาร Word หาย ทำตามขั้นตอนตามลิ้งค์ต่อไปนี้  http://th.wondershare.com/recover-data/recover-deleted-word-document.html?fbclid=IwAR1JQkQ_erJ8mnbH8M63KF-JtQ90HXu-fRTG6zZ2Qu04tFoFvgGIvm7P3-Y\n" + 
+						"ไฟล์หรือโฟล์เดอร์หาย ทำตามขั้นตอนดังนี้ http://www.icom.co.th/faq/forum_ans.php?FaqId=55")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
 			}
 			case "อินเตอร์เน็ตใช้งานไม่ได้": {
 				logRepo.saveLog("อินเตอร์เน็ตใช้งานไม่ได้",userLog.getUserID());
 				this.reply(replyToken,
-						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + 
-								"2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)" + "สายแลนและช่องเสียบสายแลนไม่เสีย แต่อินเตอร์เน็ตใช้ไม่ได้\n" + "1.คลิ๊กที่ปุ่มค้นหา ใกล้ StartMenu (ปุ่มแว่นขยาย) พิมพ์คำว่า Device Manager แล้ว Enter\n" + "2.คลิ๊กที่หัวข้อ Network Adapters  จะเห็นการ์ดแลน\n" + "3.เมื่อเอาเม้าส์ไปคลิ๊กขวาที่ การ์ดแลนซึ่งอยู่ใต้หัวข้อ Network Adapters  จะขึ้นคำว่า  Enable device ให้กด Enable device  การ์ดแลนก็จะกลับมาใช้งานได้ตามปกติ\n")));
+						Arrays.asList(new TextMessage("WIFI"+ "\n" + "1.ตรวจสอบว่าเปิดใช้งาน WiFi หรือไม่\n" + "2.ตรวจสอบการกรอกรหัส WiFi (ภาษาถูกหรือไม่, ตรวจสอบพิมพ์เล็กพิมพ์ใหญ่)\n"),
+								new TextMessage("ตรวจสอบสายอินเตอร์เน็ต" + "\n" + "สำหรับ window 7 ลองทำตามลิ้งค์ต่อไปนี้ https://www.windowssiam.com/problem-windows-7-ip-address/?fbclid=IwAR335E9flxyKRaGMCS9_ud9J2R3TsY-SHnBkPblya12jXnWPxW6gGUpjjs0\r\n" + 
+										"สำหรับ window 10 ลองทำตามลิ้งค์ต่อไปนี้ https://answers.microsoft.com/th-th/windows/forum/all/%E0%B8%A7%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A710/d4bee942-e7c0-49b9-8cf3-a3f773d9b73a?fbclid=IwAR0QThlQOugeUCxq5iileM1Mq5fhklVVXQkR-2Jeov7-C3H_JYboydwkl8k\n"),
+								new TextMessage("สายแลนและช่องเสียบสายแลนไม่เสีย แต่อินเตอร์เน็ตใช้ไม่ได้\n" + "1.คลิ๊กที่ปุ่มค้นหา ใกล้ StartMenu (ปุ่มแว่นขยาย) พิมพ์คำว่า Device Manager แล้ว Enter\n" + "2.คลิ๊กที่หัวข้อ Network Adapters  จะเห็นการ์ดแลน\n" + "3.เมื่อเอาเม้าส์ไปคลิ๊กขวาที่ การ์ดแลนซึ่งอยู่ใต้หัวข้อ Network Adapters  จะขึ้นคำว่า  Enable device ให้กด Enable device  การ์ดแลนก็จะกลับมาใช้งานได้ตามปกติ\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
