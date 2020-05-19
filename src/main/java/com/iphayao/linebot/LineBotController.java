@@ -174,9 +174,7 @@ public class LineBotController {
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
 										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg\n")
-								
-								));
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg\n")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
