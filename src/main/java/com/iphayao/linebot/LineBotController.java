@@ -174,29 +174,7 @@ public class LineBotController {
 								new TextMessage("2.คลิก Device Manager > ทำการดูหัวข้อ Sound Video and Game Controllers  : ทำการคลิกด้านหน้า\n" + 
 										"3.จะเห็น High Definition Audio Device ให้ทำการคลิกขวา และเลือก Properties > แล้วดูในช่องของ General Device Status จะต้องขึ้น This Device is working properly\n"),
 								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg"),
-								
-								new TextMessage("ตรวจสอบ Sound Properties Windows\n" + "1.ไปที่ Control Panel (Windows + R จากนั้นพิมพ์ Control Panel)\n"),
-								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_3-1.jpg"),
-								new TextMessage("2.View by : Large icon มุมขวาบน > จากนั้นเลือก Sound > Tab : Playback > เลือก จากนั้นคลิกที่ Speaker > เลือก Properties\n"),
-								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_4-1.jpg"),
-								new TextMessage("3.Tab : Advance ลองกด Test ดูว่ามีเสียงหรือไม่\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเลือกหูฟัง ก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n" + "จากนั้นก็กด OK เพื่อทำการ Save  และทำการทดสอบการเปิดเพลง (ในภาพมีลำโพงอยู่ตัวเดียวเพราะฉะนั้นค่าเลยเป็น Default Drive อยู่แล้ว )\n" + 
-												"ถ้าไม่มั่นใจว่าจะเลือกอันไหนให้คลิก Restore Defaults (มุมซ้ายล่าง)  จากนั้นทำการทดสอบอีกครั้ง และกด OK\n"),
-								new ImageMessage("https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg",
-										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_5-2.jpg"),
-								
-								new TextMessage("ตั้งค่า Playback Windows\n"),
-								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F",
-										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89488623_657260081482921_7038579622862127104_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeGKuDTBKXTv1iZL-e1_ut1LBNHW21Qxh-ME0dbbVDGH46h_KW1BWsyr1c2QNUDOdPfN0InohTH5aajVGuvhREYB&_nc_ohc=N2lTrXsPmUUAX_LjYVP&_nc_ht=scontent.fbkk20-1.fna&oh=969d1ea9c25381e9dae9785d67baf247&oe=5EE9D04F"),
-								new TextMessage("1.ไปที่ Search จากนั้นพิมพ์ Sound\n"),
-								new TextMessage("2.ในช่องของ Playback แต่ละคนจะไม่เหมือนกัน บางคนมีแค่ 1 อัน บางคนมีหลายอัน\n" + "ตรงนี้สำคัญ : ถ้าเราต่อด้วยลำโพง ก็ให้คลิกขวาที่ ลำโพงจากนั้นเลือก Set as Default Drive\n" + "แต่ถ้าเราเลือกหูฟัง เราก็เลือกหูฟัง จากนั้นเลือก Set as Default Drive\n"),
-								new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC",
-										"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/89400270_2592276361096325_6924005649344888832_n.png?_nc_cat=108&_nc_sid=b96e70&_nc_eui2=AeEDFp7cQMW4DWcVUC7j1LOVf2BQi5qFEiF_YFCLmoUSIfKTcyWnNRy3L28-UwiJhmnwUegm-Zwh39v6qlH0J0nP&_nc_ohc=e_wMRON4MVUAX89tZYb&_nc_ht=scontent.fbkk20-1.fna&oh=4eb11de398699d0ba700157250457e7e&oe=5EEB33EC"),
-								
-								new TextMessage("หรือตั้งค่า Sound ตามขั้นตอนตามลิ้งค์  https://notebookspec.com/%E0%B8%A5%E0%B8%B3%E0%B9%82%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%94/179657/?fbclid=IwAR3lecT6zeC_3z-Exfmlu9lB4MqtwyvyE9f7v9i66NFmw2nHO7L3-Iw70j4)\n" + "\n"),
-								new TextMessage("หรือแก้ไขตามวิธีการขั้นตอนตามลิงค์นี้ https://notebookspec.com/sound-mix-volume/463316/")));
+										"https://notebookspec.com/web/wp-content/uploads/2018/08/Screenshot_2-1.jpg")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
