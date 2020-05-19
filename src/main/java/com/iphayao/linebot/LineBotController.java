@@ -158,7 +158,7 @@ public class LineBotController {
 				this.reply(replyToken,
 						Arrays.asList(new TextMessage("1. ตรวจสอบว่าปลั๊กไฟถูกเสียบอยู่หรือไม่"+ "\n" + "2. ตรวจสอบว่าเสียบปลั๊กไฟแน่นหรือไม่\n" + 
 								"3. ตรวจสอบสวิตซ์ไฟว่าเปิดหรือไม่"),
-								new ImageMessage("https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg", "https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg")));
+								new ImageMessage("https://www.picz.in.th/image/drone-1245980-640.qYZElD.jpg", "https://www.picz.in.th/image/elephant-1822636.qYV4Pt.jpg")));
 				userLog.setStatusBot(status.DEFAULT);
 				break;
 			}
