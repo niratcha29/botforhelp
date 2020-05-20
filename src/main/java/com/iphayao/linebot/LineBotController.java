@@ -185,8 +185,10 @@ public class LineBotController {
 				logRepo.saveLog("เครื่องคอมพิวเตอร์ดับเอง",userLog.getUserID());
 				this.reply(replyToken,
 				Arrays.asList(new TextMessage("เช็คดูสายปลั๊กไฟต่างๆว่าเสียบแน่นหรือไม่"),
-							new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50",
-								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/96780735_1551698928332155_32072028332752896_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_eui2=AeGkxxTFxTrzc5_j1DSY8YeML_AUo4GCo48v8BSjgYKjjxpreQlB48QZrAlVf2tfeXOOLfE2wlwUX0aBkBLstNSd&_nc_ohc=6tDBUsdR4rsAX_JwcOQ&_nc_ht=scontent.fbkk20-1.fna&oh=66496127fa9b43c5faba09e7d029d31f&oe=5EEB8D50"),
+							new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/98355196_536328907059714_115525368902844416_n.jpg?_nc_cat=102&_nc_sid=b96e70&_nc_eui2=AeGuXtSef7-mLo2_NXltZKzkntti7Z77F_ae22LtnvsX9svC6HN4xoureLM1IZ5KXcnxvoQHPjTWi5S4SMoR7881&_nc_ohc=IJuYBugIMGgAX9c0Eyq&_nc_ht=scontent.fbkk20-1.fna&oh=ed2e31efa2d3d883c780cb05fde75dc2&oe=5EE86085",
+								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/98355196_536328907059714_115525368902844416_n.jpg?_nc_cat=102&_nc_sid=b96e70&_nc_eui2=AeGuXtSef7-mLo2_NXltZKzkntti7Z77F_ae22LtnvsX9svC6HN4xoureLM1IZ5KXcnxvoQHPjTWi5S4SMoR7881&_nc_ohc=IJuYBugIMGgAX9c0Eyq&_nc_ht=scontent.fbkk20-1.fna&oh=ed2e31efa2d3d883c780cb05fde75dc2&oe=5EE86085"),
+							new ImageMessage("https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/98359578_2939605566077177_6969622874952826880_n.jpg?_nc_cat=102&_nc_sid=b96e70&_nc_eui2=AeEbBoFOjk0mxcJAWcXOwN9BpZwACnMwxMOlnAAKczDEw6dEF3XjIp0e4N236gy_5gzNrvM8CCP5RtNViUWB-ZJB&_nc_ohc=4ryBZfyegrEAX__mB1O&_nc_ht=scontent.fbkk20-1.fna&oh=4ba3275e4a5480aed36c03aaa73c9852&oe=5EEB9A3E",
+								"https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.15752-9/98359578_2939605566077177_6969622874952826880_n.jpg?_nc_cat=102&_nc_sid=b96e70&_nc_eui2=AeEbBoFOjk0mxcJAWcXOwN9BpZwACnMwxMOlnAAKczDEw6dEF3XjIp0e4N236gy_5gzNrvM8CCP5RtNViUWB-ZJB&_nc_ohc=4ryBZfyegrEAX__mB1O&_nc_ht=scontent.fbkk20-1.fna&oh=4ba3275e4a5480aed36c03aaa73c9852&oe=5EEB9A3E"),
 							new TextMessage("หรือทำขั้นตอนตามลิ้งค์นี้ http://itnews4u.com/fix-computer-turn-off-automatically.html")));
 		userLog.setStatusBot(status.DEFAULT);
 		break;
